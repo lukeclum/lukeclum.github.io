@@ -3,11 +3,11 @@ import { ProjectService }  from '../../project.service';
 import { Project }         from '../../project';
 
 @Component({
-  selector: 'app-project-partial',
-  templateUrl: './project-partial.component.html',
-  styleUrls: ['./project-partial.component.css']
+  selector: 'app-project-list',
+  templateUrl: './project-list.component.html',
+  styleUrls: ['./project-list.component.css']
 })
-export class ProjectPartialComponent implements OnInit {
+export class ProjectListComponent implements OnInit {
 
   projects: Project[];
 

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectPartialComponent } from './project-partial.component';
+import { BrisketKitComponent } from './brisket-kit.component';
 
-describe('ProjectPartialComponent', () => {
-  let component: ProjectPartialComponent;
-  let fixture: ComponentFixture<ProjectPartialComponent>;
+describe('BrisketKitComponent', () => {
+  let component: BrisketKitComponent;
+  let fixture: ComponentFixture<BrisketKitComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProjectPartialComponent ]
+      declarations: [ BrisketKitComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProjectPartialComponent);
+    fixture = TestBed.createComponent(BrisketKitComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,7 +1,12 @@
 import { Project } from './project';
 
 export const PROJECTS: Project[] = [
-  { name: 'Project 1', id: 'project-1', template: './projects/project-1.component.html' },
-  { name: 'Project 2', id: 'project-2', template: './projects/project-2.component.html' },
-  { name: 'Project 3', id: 'project-3', template: './projects/project-3.component.html' }
+  { name: 'Sous Vide Cook View', id: '/sous-vide-cook-view' },
+  { name: 'Storyform', id: '/storyform' },
+  { name: 'Chefsteps Web Components', id: '/chefsteps-web-components' },
+  { name: 'Joule Packaging', id: '/joule-packaging' },
+  { name: 'Brisket Kit', id: '/brisket-kit' },
+  { name: 'MSR', id: '/msr' },
+  { name: 'Gigantic Squid', id: '/gigantic-squid' },
+  { name: 'Studio 216', id: '/studio-216' }
 ];

@@ -1,68 +1,101 @@
-<h1>Joule Sous Vide Cooking</h1>
-<h5>What I learned redesigning a sous vide cooking experience.<h5>
+<h1>Joule Sous Vide</h1>
+<h3>What I learned redesigning a sous vide cooking experience.</h3>
 
 <h2>Overview</h2>
-<p class="intro">In the fall of 2016 we (ChefSteps) released Joule, a connected sous vide device, to the world. But a year and a half later, the core cooking UX needed some substantial improvements.</p>
+<p class="callout">In the fall of 2016 we (ChefSteps) released Joule, a connected sous vide device, to the world. But a year and a half later, the core cooking UX needed some substantial improvements.</p>
 
-<p>As the first fully connected sous vide device, Joule is controlled by a companion app that allows users to set Joule to specific temperature, monitor their cook, and guide users through a comprehensive cooking process. Sous vide, for those that don’t know, is a precise cooking method that uses water to help cooks achieve very predictable results. TLDR1: Joule makes incredible food and is very flexible to use.</p>
+<p>As the first fully connected sous vide device, Joule is controlled by a companion app that allows users to set it to specific temperature, monitor their cook, and guide them through a comprehensive cooking process. However, as the sole mechanism for controlling Joule, the app needed to provide a much more stable and consistent cooking experience despite frequent connection issues, error cases, and multi-device scenarios. </p>
 
-<p>However, due to initial hardware constraints, Joule does not have physical controls and therefore pushes all of the its functionality to its app. With frequent connection issues, multi device support, multiple sources of truth, error cases, and other distributed systems problems, the app needed a robust and dependable solution. TLDR2: The system is complicated but the app can’t suck.</p>
-
-<div class="image">
-Sous vide cooking process
-</div>
-
+<img src="/assets/cook-view-hero.jpg" />
 
 <h2>Identifying the problems</h2>
-<p>In late 2017, I was asked to lead the design efforts for Joule. To better understand the current state of the app, I began by running a qualitative user study where I interviewed 15+ Joule users to better understand their cooking habits, pain points, and joys of using Joule. It was a fast, overwhelming flood of data that helped bring to light a few common themes. Next we did an analysis of all our reviews from Amazon, Apple, and Google.</p>
+<p>In late 2017, I was asked to lead the design efforts for the Joule app. To better understand the current state, I began by running a qualitative study that included a host of user interviews (local and remote), an in depth analysis of all of our reviews to date, and a bunch of early stage prototyping and evaluative testing.</p>
 
- <div class="image">
-[Notes / spreadsheets / recordings]
+<img src="/assets/cook-research.jpg" />
+
+<p>It quickly became clear to us that users were struggling with parts of the basic cooking process. There were problems with missed notifications, a lack of some core cooking information, confusion with adding food, and some general ambiguity about the sous vide process as a whole.</p>
+
+<p>Moving forward, we decided that we needed to take a fresh look at the core cooking experience in the app, with an emphasis on a few themes:</p>
+<ul>
+  <li>Users should easily be able to identify the current cooking state with ease.</li>
+  <li>Users should feel confident about when they can add and remove their food.</li>
+  <li>Users should have more transparency into errors and recovery.</li>
+  <li>Users should be able to quickly and efficiently start a cook with limited additional interactions.</li>
+  <li>Users should have access to UX patterns that can grow with future products and features.</li>
+</ul>
+
+<p>After a few rounds of early design, prototyping, and usability testing with both current and perspective Joule users, we landed on our next iteration.</p>
+
+<img class="full-width" src="/assets/cook-flow.jpg" />
+
+<h1>A more comprehensive cooking dashboard</h1>
+
+<div class="fifty fifty-left">
+  <img src="/assets/cook-status.jpg" />
+  <div class="fifty-content">
+    <h3>Simple, Glanceable Status</h3>
+    <p>To help cut through the chaos of the kitchen, we designed a simple, glanceable view that would quickly communicate the status of the cook and showcase only the most relevant information.</p>
+  </div>
 </div>
 
-<p>Within the core cooking UX, we discovered a few problems:</p>
-<ul>
-  <li>Users were often missing notifications and didn’t have any information to help them recover</li>
-  <li>There was confusion around when they should add food</li>
-  <li>There was confusion around the differences between our “manual” and “guided” cook modes.</li>
-  <li>It took a few cooks for users to have a comprehensive overview of the process of sous vide cooking.</li>
-  <li>Often times users didn’t know what their connection status was which exacerbated a few already troubling connection issues.</li>
-  <li>From a business perspective, we needed a much more flexible UI that could scale with new features.</li>
-</ul>
+<div class="fifty fifty-right">
+  <img src="/assets/cook-timeline.jpg" />
+  <div class="fifty-content">
+    <h3>Detailed Cooking Stats</h3>
+    <p>To help with missed notifications and meal planning we included a comprehensive timeline of cooking events.</p>
+  </div>
+</div>
 
-<h2>Goals</h2>
-<p>Following these studies, we decided that we needed to take a fresh look at our cooking UX. To guide our design process, we decided to focus on:</p>
-<ul>
-  <li>Providing users with a lot more data about their cook to help with planning and/or recovering from an error state.</li>
-  <li>Simplify and front load touchpoints where possible</li>
-  <li>Reduce and consolidate UX patterns</li>
-  <li>Build in as much flexibility into the UI as possible</li>
-</ul>
+<div class="fifty fifty-left">
+  <img src="/assets/cook-autostart-timer.jpg" />
+  <div class="fifty-content">
+    <h3>Autostart Timers</h3>
+    <p>In order to reduce unnecessary touch points, we decided to encourage users to drop their food early and let Joule automatically start their timer once their water was heated. This addressed one of our most common user complaints.</p>
+  </div>
+</div>
 
-<p>After a few rounds of design, prototyping, and usability testing with both current and perspective Joule users, we landed on our next iteration.</p>
+<div class="fifty fifty-right">
+  <img src="/assets/cook-status.jpg" />
+  <div class="fifty-content">
+    <h3>Holding Times</h3>
+    <p>One of the major benefits of sous vide is the fact that you don’t have to remove your food as soon as it’s complete. Instead, it’s flexible enough to be ready when you are. To make this value more clear, we released a new feature that let users know how long they could leave their food before the results would start to change.</p>
+  </div>
+</div>
 
-<h2>A more comprehensive cooking dashboard</h2>
+<div class="fifty fifty-left">
+  <img src="/assets/cook-status.jpg" />
+  <div class="fifty-content">
+    <h3>More Intuitive Errors</h3>
+    <p>To make errors more clear and recoveries more obvious, we released a simplified pattern that helped users troubleshoot their problem and easily recover when possible.</p>
+  </div>
+</div>
 
-<div class="image"></div>
-<h3>Simple, Glanceable Status</h3>
-<p>To help cut through the chaos of the kitchen, we designed a simple, glanceable, element that would quickly communicate the status of the cook, and showcase only the most relevant information.</p>
+<div class="fifty fifty-right">
+  <img src="/assets/cook-status.jpg" />
+  <div class="fifty-content">
+    <h3>Simple and Familiar Recipes</h3>
+    <p>We simplified the recipe layout to follow more common usability patterns and be much more scannable.</p>
+  </div>
+</div>
 
-<div class="image"></div>
-<h3>Detailed timelines and cooking stats</h3>
-<p>To help with missed notifications and meal planning we included a comprehensive timeline of cooking events that allow users to have detailed information about their current cook.</p>
+<img class="full-width" src="/assets/cook-closer.jpg" />
 
-<div class="image"></div>
-<h3>Autostart Timers</h3>
-<p>Arguably the most important feature of the redesign, we decided to encourage users to drop their food early and let Joule automatically start their timer once their water was heated. However, due to a few considerable technical issues, we rolled this into its own separate project. Click here to learn more about the design process.</p>
+<h2>What People Said</h2>
 
-<div class="image"></div>
-<h3>Perfect Before</h3>
-<p>One of the major benefits of sous vide is the fact that you don’t necessarily have to remove your food as soon as it’s complete. Instead, it’s flexible enough to be ready when you are (For example, you can leave your steaks in the water until your friends arrive). In order to communicate this value and help users feel confident about letting their food continue to cook, we released a new feature that let users know how long they could leave their food before the results would start to change.</p>
+<div class="grid">
+  <p class="grid-item">“Much more intuitive and let's you know where you are in a cook. Super helpful for when doing two cooks at once.”</p>
 
-<div class="image"></div>
-<h3>Better Error States</h3>
-<p>Error states were redesigned to follow a consistent pattern that helps users troubleshoot the problem and recover when possible.</p>
+  <p class="grid-item">“The new cook timer is great. I love that it keeps track of how long the food had been in the water.”</p>
 
-<div class="image"></div>
-<h3>Simple and Familiar Recipes</h3>
-<p>We simplified the recipe layout to follow more common usability patterns and be much more scannable.</p>
+  <p class="grid-item">“Love the new timer and the guides.”</p>
+
+  <p class="grid-item">“I loved the new look and feel. Gives better and more complete information about where you are in the process “</p>
+
+  <p class="grid-item">“The cooking view is MUCH better than before. I like the timeline since it gives me all the timing information up front, but also it lets me look back later on. If I forget to tell the app I put the food in, I can still figure out the correct end time.“</p>
+
+  <p class="grid-item">“REALLY like the changes to the app. I didn't know I wanted it different than what it was, but now that I've seen the newest version DO NOT want to go back ever.”</p>
+
+  <p class="grid-item">“The cook page is a great enhancement. Having additional detail about the heat and cook states has been really helpful, since I often deal with wonky connectivity issues and can't always rely on notifications.”</p>
+
+  <p class="grid-item">“The new cook time interface is really helpful. Seeing the progress is amazing.”</p>
+</div>

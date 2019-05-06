@@ -11,13 +11,10 @@ import { FooterComponent } from './partials/footer/footer.component';
 import { ProjectListComponent } from './partials/project-list/project-list.component';
 
 import { StoryformComponent } from './projects/storyform/storyform.component';
-import { CsComponentsComponent } from './projects/cs-components/cs-components.component';
-import { BrisketKitComponent } from './projects/brisket-kit/brisket-kit.component';
+import { JouleDesignSystemComponent } from './projects/joule-design-system/joule-design-system.component';
+import { SelectedWorkComponent } from './projects/selected-work/selected-work.component';
 import { JoulePackagingComponent } from './projects/joule-packaging/joule-packaging.component';
 import { JouleCookViewComponent } from './projects/joule-cook-view/joule-cook-view.component';
-import { MsrComponent } from './projects/msr/msr.component';
-import { StudioAppComponent } from './projects/studio-app/studio-app.component';
-import { GiganticSquidComponent } from './projects/gigantic-squid/gigantic-squid.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +26,10 @@ import { GiganticSquidComponent } from './projects/gigantic-squid/gigantic-squid
     ProjectListComponent,
 
     StoryformComponent,
-    CsComponentsComponent,
-    BrisketKitComponent,
+    JouleDesignSystemComponent,
+    SelectedWorkComponent,
     JoulePackagingComponent,
-    JouleCookViewComponent,
-    MsrComponent,
-    StudioAppComponent,
-    GiganticSquidComponent
+    JouleCookViewComponent
   ],
   imports: [
     BrowserModule,

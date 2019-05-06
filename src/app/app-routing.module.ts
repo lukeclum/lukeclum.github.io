@@ -5,13 +5,10 @@ import { AboutComponent }      from './pages/about/about.component';
 import { HomeComponent }      from './pages/home/home.component';
 
 import { StoryformComponent } from './projects/storyform/storyform.component';
-import { CsComponentsComponent } from './projects/cs-components/cs-components.component';
-import { BrisketKitComponent } from './projects/brisket-kit/brisket-kit.component';
+import { JouleDesignSystemComponent } from './projects/joule-design-system/joule-design-system.component';
+import { SelectedWorkComponent } from './projects/selected-work/selected-work.component';
 import { JoulePackagingComponent } from './projects/joule-packaging/joule-packaging.component';
 import { JouleCookViewComponent } from './projects/joule-cook-view/joule-cook-view.component';
-import { MsrComponent } from './projects/msr/msr.component';
-import { StudioAppComponent } from './projects/studio-app/studio-app.component';
-import { GiganticSquidComponent } from './projects/gigantic-squid/gigantic-squid.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,12 +16,9 @@ const routes: Routes = [
 
   { path: 'sous-vide-cook-view', component: JouleCookViewComponent },
   { path: 'storyform', component: StoryformComponent },
-  { path: 'chefsteps-web-components', component: CsComponentsComponent },
+  { path: 'joule-design-system', component: JouleDesignSystemComponent },
   { path: 'joule-packaging', component: JoulePackagingComponent },
-  { path: 'brisket-kit', component: BrisketKitComponent },
-  { path: 'msr', component: MsrComponent },
-  { path: 'gigantic-squid', component: GiganticSquidComponent },
-  { path: 'studio-216', component: StudioAppComponent },
+  { path: 'selected-work', component: SelectedWorkComponent },
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 <!-- <h2>{{project.name}} + {{project.url}}</h2> -->
 <div class="project-list">
-  <div class="project-item" *ngFor="let project of projects">
+  <div class="project-item" *ngFor="let project of projects" routerLink="/{{project.id}}">
     <div class="project-thumbnail"></div>
-    <a class="project-name" routerLink="/{{project.id}}">{{project.name}}</a>
+    <a class="project-name">{{project.name}}</a>
   </div>
 </div>

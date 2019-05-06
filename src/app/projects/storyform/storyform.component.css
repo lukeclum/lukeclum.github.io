@@ -1,0 +1,12 @@
+.storyform-grid {
+  align-items: start;
+  padding: 24px 24px 48px;
+}
+.storyform-grid img {
+  max-width: 120px;
+  padding: 12px;
+}
+
+.storyform-grid h5 {
+  margin-bottom: 0;
+}

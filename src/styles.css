@@ -20,7 +20,7 @@ body, p {
   color: rgba(0,0,0,0.87);
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: 'EB Garamond', serif;
   font-weight: 600;
   font-style: normal;
@@ -31,7 +31,7 @@ h1 {font-size: 70px; max-width: 800px; margin: 0 auto 24px;}
 h2 {font-size: 30px; max-width: 800px; margin: 0 auto 24px;}
 h3 {font-size: 20px; line-height: 28px; max-width: 800px; margin: 0 auto 24px;}
 h4 {font-size: 18px; line-height: 26px; max-width: 800px; margin: 0 auto 24px;}
-h5 {font-size: 16px; line-height: 24px; max-width: 800px; margin: 0 auto 24px;}
+h5 {font-size: 16px; font-weight: 600; line-height: 24px; max-width: 800px; margin: 0 auto 24px;}
 p {font-size: 16px; line-height: 24px; max-width: 800px; margin: 0 auto 24px;}
 ul {max-width: 800px; margin: 0 auto 24px;}
 li {font-size: 16px; line-height: 24px;}
@@ -71,14 +71,6 @@ img {
   display: block;
   margin: auto;
   padding: 48px 0;
-}
-
-img.full-width {
-  max-width: none;
-}
-
-img.small-width {
-  max-width: 800px;
 }
 
 .video {
@@ -146,4 +138,12 @@ img.small-width {
 .project-list {
   max-width: 1200px;
   margin: auto;
+}
+
+.full-width {
+  max-width: none;
+}
+
+.small-width {
+  max-width: 800px;
 }

@@ -1,16 +1,60 @@
 <h1>Building a Design System for Joule</h1>
-<p>
-  cjoule-design-system works!
-</p>
+<p class="callout">In early 2017 the app team was tasked with migrating our app to a new framework. Having recently been asked to lead design for the app, I decided to use this opportunity to establish a scalable design system.</p>
+
+<p>Up until that point, the app had been built relatively piecemeal and the experience reflected this. We frequently heard complaints from users about the navigation patterns and the visibility of core features. In addition, engineers often didn’t have bitesize components to work with and often duplicated functionality within different features.</p>
+
+<h2>Problems</h2>
+<ul>
+<li>There was an opportunity to greatly improve the design/development workflow</li>
+<li>Design was lacking a clear source of truth</li>
+<li>UX patterns needed to be consolidated</li>
+<li>There was a general need to move more quickly</li>
+</ul>
+
+<h2>Sketch + Github</h2>
+<p>I decided to utilize a combination of a Sketch symbol library and Github to make a system that would allow designers to collaborate more efficiently while also introducing version control. I also wanted to include the design specs in an environment that our engineers were already comfortable with.</p>
+
+<img src="/assets/ds-sketch-github.jpg" />
 
 <h2>Typography</h2>
+<p>Starting with Type, I modified our type ramp to leverage Circular for most of the written content in the app and Akkurat primarily for prominent numerals. While the rest of the design system was built on an 8px grid, I intentionally decided to leave Type off of this grid in order to give us more flexibility with type sizes.</p>
 <img src="/assets/ds-type.png" />
 
 <h2>Color</h2>
+<p>For color, I decided to begin very simply with 6 primary hues,  and 6 gradations of gray/black. The goal was to eventually do a full color study and add multiple shades for each primary hue.</p>
 <img src="/assets/ds-color.png" />
 
 <h2>Iconography</h2>
+<p>I crafted dozens and dozens of icons from scratch, making sure to keep them on an 8 based grid.</p>
 <img src="/assets/ds-icons.png" />
 
 <h2>Components</h2>
+<p>Because I was working from an existing product, my first step was to do an audit of all the existing components and patterns. I went through every view in the app and identified opportunities to both consolidate existing patterns and improve on components.</p>
+
+<p>Next I made sure to think about components holistically, especially with regards to how they would nest within each other. Because my entire system was based on a grid, this ended up working relatively well.</p>
+
+<img class="small-width" src="/assets/ds-list-item.jpg" />
+
+<p>For example, a simple “list-item” component was built “insert slots” that could take any kind of sub-component–icons, buttons, text, photos, inputs. This system allowed us to have a lot of flexibility in assembling our UI while leveraging the maximum amount of shareability.</p>
+
 <img class="full-width" src="/assets/ds-components.jpg" />
+
+<h2>Leveraging the power of Sketch</h2>
+<p>Sketch’s symbols gave us a lot of flexibility when sharing files across the team. Because I could customize which overrides were acceptable for each symbol, I was able to reduce the amount of slack in the system.</p>
+
+<p>I also made sure that there was parity with the naming of the variables/overrides across my github specs and my sketch symbols so that designers and engineers were discussing components with the same language.</p>
+
+<h2>Using Git as Source of Truth</h2>
+<p>Making Github an essential part of the design workflow ended up working really well. Once we had a component’s functionality and visual elements finalized, we’d submit a PR that included our sketch files, changes to the sketch library, and any written documentation and specs for that component. This allowed engineers to reference these PR’s when changes to a component were made.</p>
+
+<p>Beyond component specs, we also started including all of our project specs in github to keep all of our work in one place–links to research docs, goals, logging, prototypes, etc.</p>
+<p class="callout">Not only did this make sharing knowledge within design straightforward, it also empowered engineers to dig deeper into the thinking behind the design.</p>
+
+<img class="full-width" src="/assets/ds-github.jpg" />
+
+<h2>Learnings</h2>
+<p>Maintaining design specs is hard. Components were always evolving, and the whole system is on the edge of being out of date. It took a lot of discipline to swing back around to prior specs after changes had been made in production.</p>
+
+<p>Don’t let your tools constrain your thinking. While building a component system can greatly increase your efficiency, it can also sometimes act as a blocker to creativity. On different occasions I’d find myself approaching a problem from the perspective of using our existing system rather than letting myself freely explore unique solutions.</p>
+
+<p>Your engineering team is also one of your users. Don’t underestimate the power of thinking empathetically about the struggles of your teammates and how you can make their jobs easier. It’s amazing the ways it will boost collaboration, generate new ideas, and speed up the process.</p>

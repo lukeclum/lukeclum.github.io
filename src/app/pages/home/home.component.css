@@ -1,3 +1,9 @@
 img {
   width: 100%;
 }
+
+.home-callout {
+  max-width: 800px;
+  padding: 48px 0;
+  text-align: center;
+}

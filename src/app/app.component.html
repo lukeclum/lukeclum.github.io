@@ -2,8 +2,8 @@
 <app-header class="header"></app-header>
 
 
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
+<main [@routeAnimations]="prepareRoute(outlet)" class="content">
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>
 
 <app-footer class="footer"></app-footer>

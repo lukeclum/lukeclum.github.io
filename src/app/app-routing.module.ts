@@ -11,10 +11,10 @@ import { JoulePackagingComponent } from './projects/joule-packaging/joule-packag
 import { JouleCookViewComponent } from './projects/joule-cook-view/joule-cook-view.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: '', component: HomeComponent, data: {animation: 'HomePage'} },
+  { path: 'about', component: AboutComponent, data: {animation: 'AboutPage'} },
 
-  { path: 'sous-vide-cook-view', component: JouleCookViewComponent },
+  { path: 'sous-vide-cook-view', component: JouleCookViewComponent, data: {animation: 'CookPage'} },
   { path: 'storyform', component: StoryformComponent },
   { path: 'joule-design-system', component: JouleDesignSystemComponent },
   { path: 'joule-packaging', component: JoulePackagingComponent },
@@ -22,7 +22,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  imports: [
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule {}

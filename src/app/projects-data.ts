@@ -9,13 +9,13 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Storyform',
-    description: 'What I learned founding and failing at a publishing startup.',
+    description: 'What I learned founding and failing a publishing startup.',
     id: '/storyform',
     thumb: '/assets/storyform-devices.jpg'
   },
   {
-    name: 'Joule Design System',
-    description: 'Building a mobile design system from scratch.',
+    name: 'Building A Design System',
+    description: 'How I improved collaboration and efficiency through crafting a mobile design system from scratch.',
     id: '/joule-design-system',
     thumb: '/assets/design-system-hero.jpg'
   },

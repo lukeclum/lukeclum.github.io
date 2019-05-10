@@ -1,12 +1,46 @@
 .storyform-grid {
   align-items: start;
-  padding: 24px 24px 48px;
+  padding: 0 24px 48px;
 }
 .storyform-grid img {
   max-width: 120px;
-  padding: 12px;
+  padding: 24px 12px;
 }
 
 .storyform-grid h5 {
   margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .storyform-grid .grid-item {
+    flex: 1 1 25%;
+    width: 25%;
+    padding: 0;
+  }
+  .storyform-grid h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .storyform-grid {
+    padding: 0 0 24px;
+    justify-content: space-around;
+  }
+  .storyform-grid .grid-item {
+    flex: 1 1 50%;
+    width: 50%;
+    max-width: 200px;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .storyform-grid .grid-item {
+    flex: 1 1 50%;
+    width: 50%;
+  }
 }

@@ -29,7 +29,19 @@
   height: 100%;
   position: relative;
   border-radius: 8px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 400ms ease;
 }
+
+.project-thumbnail:focus {
+  outline: none;
+}
+
+.project-thumbnail:hover {
+  opacity: 0.7;
+}
+
 
 .project-desc {
   flex: 0 0 30%;
@@ -67,5 +79,6 @@
   }
   .project-list h2, .project-list p {
     padding: 0;
+    margin-bottom: 12px;
   }
 }

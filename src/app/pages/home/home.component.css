@@ -7,3 +7,40 @@ img {
   padding: 48px 0;
   text-align: center;
 }
+
+
+.dot-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 36px;
+}
+
+.dot-item {
+  flex: 0 0 auto;
+  opacity: 0.8;
+  margin: 0 10px;
+}
+
+.dot-item:nth-child(3n) {
+  background-color: #00c4ff;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.dot-item:nth-child(3n+1) {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid #ffe14f;
+}
+
+.dot-item:nth-child(3n+2) {
+  background-color: #ff00ebcf;
+  width: 10px;
+  height: 10px;
+}

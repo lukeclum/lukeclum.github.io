@@ -29,7 +29,7 @@ nav a:before {
   height: 48px;
   padding: 12px;
   position: relative;
-  margin-right: 12px;
+  margin-right: 0;
   transform-origin: center center;
   transition: transform 300ms ease;
   cursor: pointer;

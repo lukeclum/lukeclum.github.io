@@ -17,12 +17,12 @@ export const PROJECTS: Project[] = [
     name: 'Building A Design System',
     description: 'How I improved collaboration and efficiency through crafting a mobile design system from scratch.',
     id: '/joule-design-system',
-    thumb: '/assets/design-system-hero.jpg'
+    thumb: '/assets/ds-thumbnail.jpg'
   },
   {
     name: 'Joule Packaging',
     description: 'Redesigning packaging for retail',
     id: '/joule-packaging',
-    thumb: '/assets/joule-packaging-01.jpg'
+    thumb: '/assets/joule-box-thumb.jpg'
   },
 ];

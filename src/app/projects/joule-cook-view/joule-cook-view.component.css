@@ -1,0 +1,22 @@
+.fifty .video-wrapper {
+  position: relative;
+  position: relative;
+  padding-top: 85%;
+}
+
+.fifty .video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+@media (max-width: 700px) {
+  .fifty .video-wrapper {
+    padding-top: 140%;
+    overflow: hidden;
+  }
+}

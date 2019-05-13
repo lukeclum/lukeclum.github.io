@@ -5,20 +5,20 @@
 <h1>Joule Sous Vide</h1>
 
 <h2>Overview</h2>
-<p class="callout">In the fall of 2016 we (ChefSteps) released Joule, a connected sous vide device, to the world. But a year and a half later, the core cooking UX needed some substantial improvements.</p>
+<p class="callout">In the fall of 2016 we (ChefSteps) released <a href="https://www.chefsteps.com/joule" target="_blank">Joule</a>, a connected sous vide device, to the world. But a year and a half later, the core cooking UX needed some substantial improvements.</p>
 
-<p>As the first fully connected sous vide device, Joule is controlled by a companion app that allows users to set it to specific temperature, monitor their cook, and guide them through a comprehensive cooking process. However, as the sole mechanism for controlling Joule, the app needed to provide a much more stable and consistent cooking experience despite frequent connection issues, error cases, and multi-device scenarios. </p>
+<p>As the first fully connected sous vide device, Joule is controlled by a companion app that allows users to set it to a specific temperature, monitor their cook, and access a host of comprehensive cooking guides. However, as the sole mechanism for controlling Joule, the app needed to provide a more stable and consistent cooking experience regardless of occasional connection issues, error cases, and multi-device scenarios.</p>
 
-<img src="/assets/cook-view-hero.jpg" />
+<img class="full-width" src="/assets/cook-view-hero.jpg" />
 
 <h2>Identifying the problems</h2>
-<p>In late 2017, I was asked to lead the design efforts for the Joule app. To better understand the current state, I began by running a qualitative study that included a host of user interviews (local and remote), an in depth analysis of all of our reviews to date, and a bunch of early stage prototyping and evaluative testing.</p>
+<p>In late 2017, I was asked to lead the redesign efforts for the Joule app. To better understand the current state of things, I began by running a qualitative study that included over 15 contextual interviews from both power users and new Joule users. Next, I did an in-depth analysis of all of our reviews to date to help quantify the main pain points in the app.</p>
 
 <img src="/assets/cook-research.jpg" />
 
 <p>It quickly became clear to us that users were struggling with parts of the basic cooking process. There were problems with missed notifications, a lack of some core cooking information, confusion with adding food, and some general ambiguity about the sous vide process as a whole.</p>
 
-<p>Moving forward, we decided that we needed to take a fresh look at the core cooking experience in the app, with an emphasis on a few themes:</p>
+<p>Moving forward, we decided that we needed to take a fresh look at the core cooking experience in the app, with an emphasis on a few goals:</p>
 <ul>
   <li>Users should easily be able to identify the current cooking state with ease.</li>
   <li>Users should feel confident about when they can add and remove their food.</li>
@@ -27,9 +27,9 @@
   <li>Users should have access to UX patterns that can grow with future products and features.</li>
 </ul>
 
-<p>After a few rounds of early design, prototyping, and usability testing with both current and perspective Joule users, we landed on our next iteration.</p>
+<p>With these insights, we built a few interactive prototypes and completed a couple rounds of usability testing with both current and perspective Joule users. After a bit more design iteration we landed on a new cooking experience.</p>
 
-<img class="full-width" src="/assets/cook-flow.jpg" />
+<img class="full-width" src="/assets/cv-flow.jpg" />
 
 <h1 class="align-center">A more comprehensive cooking dashboard</h1>
 
@@ -52,7 +52,7 @@
 <div class="fifty fifty-left">
   <!-- <img src="/assets/cook-autostart-timer.jpg" /> -->
   <div class="video-wrapper">
-    <video width="100%" height="auto" playsinline autoplay muted loop>
+    <video width="100%" height="auto" playsinline autoplay muted loop poster="/assets/cv-autostart.jpg">
       <source src="/assets/cv-autostart.mp4" type="video/mp4" autoplay muted>
       <source src="/assets/cv-autostart.webm" type="video/webm">
     </video>
@@ -66,7 +66,7 @@
 <div class="fifty fifty-right">
   <!-- <img src="/assets/cook-status.jpg" /> -->
   <div class="video-wrapper">
-    <video width="100%" height="auto" playsinline autoplay muted loop>
+    <video width="100%" height="auto" playsinline autoplay muted loop poster="/assets/cv-holding.jpg">
       <source src="/assets/cv-holding.mp4" type="video/mp4" autoplay muted>
       <source src="/assets/cv-holding.webm" type="video/webm">
     </video>
@@ -80,7 +80,7 @@
 <div class="fifty fifty-left">
   <!-- <img src="/assets/cook-status.jpg" /> -->
   <div class="video-wrapper">
-    <video width="100%" height="auto" playsinline autoplay muted loop>
+    <video width="100%" height="auto" playsinline autoplay muted loop poster="/assets/cv-errors.jpg">
       <source src="/assets/cv-errors.mp4" type="video/mp4" autoplay muted>
       <source src="/assets/cv-errors.webm" type="video/webm">
     </video>
@@ -93,7 +93,7 @@
 
 <div class="fifty fifty-right">
   <div class="video-wrapper">
-    <video width="100%" height="auto" playsinline autoplay muted loop>
+    <video width="100%" height="auto" playsinline autoplay muted loop poster="/assets/cv-guides.jpg">
       <source src="/assets/cv-recipe-flow.mp4" type="video/mp4" autoplay muted>
       <source src="/assets/cv-recipe-flow.webm" type="video/webm">
     </video>

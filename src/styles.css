@@ -150,6 +150,12 @@ h1, h2, h3, h4, h5, p, ul {
   padding: 24px 48px;
 }
 
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .parent {
   display: flex;
   flex-direction: column;
@@ -161,6 +167,7 @@ h1, h2, h3, h4, h5, p, ul {
   /* max-width: 1200px; */
   width: 100%;
   padding: 48px 0;
+  min-height: 100vh;
 }
 
 img {

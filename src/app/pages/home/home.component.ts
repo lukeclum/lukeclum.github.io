@@ -12,4 +12,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollToWork(event) {
+    var elmnt = document.getElementById("projects");
+    elmnt.scrollIntoView({behavior: "smooth"});
+  }
+
 }

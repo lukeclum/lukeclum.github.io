@@ -20,11 +20,11 @@ export const fader =
           opacity: 0,
           transform: 'translateY(20px)',
         }),
-      ]),
+      ], { optional: true }),
       query(':enter', [
         animate('600ms ease',
           style({ opacity: 1, transform: 'translateY(0)' })
         ),
-      ]),
+      ], { optional: true }),
     ]),
   ]);

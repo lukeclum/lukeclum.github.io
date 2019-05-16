@@ -2,9 +2,9 @@
   <div class="home-hero">
     <h1 class="home-callout">I’m Luke Clum, a product designer based in Seattle.</h1>
     <div class="home-cta">
-      <a class="brand-font" href="#">Let's Look</a>
+      <a class="brand-font" (click)="scrollToWork($event)">Let's Look</a>
       <img src="/assets/arrow-down.svg" />
     </div>
   </div>
 </div>
-<app-project-list></app-project-list>
+<app-project-list id="projects"></app-project-list>

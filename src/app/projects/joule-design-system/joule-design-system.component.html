@@ -1,7 +1,7 @@
 <h1>Building a Design System for Joule</h1>
 <p class="callout">In early 2017 my team was tasked with migrating a widely used cooking app to a new framework. I decided to use this opportunity to establish a scalable design system.</p>
 
-<p>Up until that point, the app had been built relatively piecemeal and the experience reflected this. We frequently heard complaints from users about things like inconsistent navigation patterns and the limited visibility of core features. In addition, engineers often didn’t have bitesize components to work with and were even duplicating work across different features.</p>
+<p>Up until that point, the app had been built relatively piecemeal, and the experience reflected this. We frequently heard complaints from users about things like inconsistent navigation patterns and the limited visibility of core features. In addition, engineers often didn’t have bitesize components to work with and were even duplicating work across different features.</p>
 
 <h2>Problems</h2>
 <ul>
@@ -41,19 +41,19 @@
 
 <img class="small-width" src="/assets/ds-list-item.jpg" />
 
-<p>For example, a simple “list-item” component was built “insert slots” that could take any kind of sub-component–icons, buttons, text, photos, inputs. This system allowed us to have a lot of flexibility in assembling our UI while leveraging the maximum amount of shareability.</p>
+<p>For example, a simple “list-item” component was built with “insert slots” that could take any kind of sub-component: icons, buttons, text, photos, and inputs. This system allowed us to have a lot of flexibility in assembling our UI while leveraging the maximum amount of shareability.</p>
 
 <img class="full-width" src="/assets/ds-components.jpg" />
 
 <h2>Leveraging the power of Sketch</h2>
 <p>Sketch’s symbols gave us a lot of flexibility when sharing files across the team. Because I could customize which overrides were acceptable for each symbol, I was able to reduce the amount of slack in the system. </p>
 
-<p>I also made sure that there was parity with the naming of the variables/overrides across my github specs and my sketch symbols so that designers and engineers were discussing components with the same language. </p>
+<p>I also made sure that there was parity with the naming of the variables/overrides across the github specs and sketch symbols so that designers and engineers were discussing components with the same language.</p>
 
-<h2>Using Git as Source of Truth</h2>
+<h2>Using Github As a Source of Truth</h2>
 <p>Making Github an essential part of the design workflow ended up working really well. Once we had a component’s functionality and visual elements finalized, we’d submit a PR that included our sketch files, changes to the sketch library, and any written documentation and specs for that component. This allowed engineers to reference these PR’s when changes to a component were made.</p>
 
-<p>Beyond component specs, we also started including all of our project specs in github to keep all of our work in one place–links to research docs, goals, logging, prototypes, etc.</p>
+<p>Beyond component specs, we also started including all of our project specs in github to keep all of our work in one place: links to research docs, goals, logging, prototypes, etc.</p>
 <p class="callout">Not only did this make sharing knowledge within design straightforward, it also empowered engineers to dig deeper into the thinking behind the design.</p>
 
 <img class="full-width" src="/assets/ds-github.jpg" />

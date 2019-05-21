@@ -1,0 +1,120 @@
+
+.resume-block {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  padding: 48px 24px 24px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.resume-block:last-child {
+  border-bottom: none;
+}
+
+.resume-section {
+  flex: 0 0 40%;
+}
+
+.resume-item {
+  flex: 0 0 60%;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.resume-awards .resume-item {
+  margin-bottom: 12px;
+}
+
+.resume-item .resume-title {
+  flex: 1 1 80%;
+  order: 0;
+}
+
+.resume-item .resume-date {
+  flex: 1 1 20%;
+  order: 1;
+  text-align: right;
+}
+.resume-item .resume-employer {
+  flex: 1 1 100%;
+  margin-bottom: 24px;
+  order: 2;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.resume-item .resume-desc {
+  flex: 0 0 100%;
+  order: 3;
+}
+
+
+.resume-section h2 {
+  font-size: 50px;
+  line-height: 50px;
+  max-width: none;
+  padding: 0;
+}
+
+.resume-item h3,
+.resume-item h5 {
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.resume-item p {
+  margin-bottom: 6px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 22px;
+  max-width: none;
+  padding: 0;
+}
+
+@media (max-width: 748px) {
+  .resume-block {
+    display: block;
+    padding: 36px 24px 24px;
+  }
+  .resume-title {
+    flex: 0 0 65%;
+  }
+  .resume-date {
+    flex: 0 0 35%;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-section h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .resume-block {
+    padding: 36px 24px 0;
+  }
+  .resume-block:first-child {
+    padding: 0 24px 0;
+  }
+  .resume-item .resume-title {
+    flex: 0 1 100%;
+    margin-bottom: 6px;
+  }
+  .resume-item .resume-date {
+    flex: 1 1 50%;
+    margin-bottom: 24px;
+    order: 2;
+  }
+  .resume-item .resume-employer {
+    flex: 1 1 50%;
+    order: 1;
+    margin-bottom: 24px;
+  }
+}

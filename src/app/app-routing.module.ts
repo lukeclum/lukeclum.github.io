@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent }      from './pages/about/about.component';
 import { HomeComponent }      from './pages/home/home.component';
+import { ResumeComponent }      from './pages/resume/resume.component';
 
 import { StoryformComponent } from './projects/storyform/storyform.component';
 import { JouleDesignSystemComponent } from './projects/joule-design-system/joule-design-system.component';
@@ -13,6 +14,7 @@ import { JouleCookViewComponent } from './projects/joule-cook-view/joule-cook-vi
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'HomePage'} },
   { path: 'about', component: AboutComponent, data: {animation: 'AboutPage'} },
+  { path: 'resume', component: ResumeComponent},
 
   { path: 'sous-vide-cook-view', component: JouleCookViewComponent, data: {animation: 'CookPage'} },
   { path: 'storyform', component: StoryformComponent },

@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { ProjectListComponent } from './partials/project-list/project-list.component';
@@ -22,6 +23,7 @@ import { JouleCookViewComponent } from './projects/joule-cook-view/joule-cook-vi
     AppComponent,
     AboutComponent,
     HomeComponent,
+    ResumeComponent,
     HeaderComponent,
     FooterComponent,
     ProjectListComponent,

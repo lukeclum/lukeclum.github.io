@@ -117,4 +117,8 @@
     order: 1;
     margin-bottom: 24px;
   }
+  .resume-section h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }

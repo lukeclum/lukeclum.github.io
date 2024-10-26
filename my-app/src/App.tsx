@@ -34,13 +34,13 @@ function App() {
           </p>
           <a
             href="mailto:clum.luke@gmail.com"
-            className="text-sm pt-6 text-gray-400 underline decoration-blue-700 underline-offset-2"
+            className="text-sm pt-6 text-gray-400 underline decoration-blue-700 underline-offset-2 w-fit"
           >
             Get in touch
           </a>
           <a
             href="https://www.linkedin.com/in/lukeclum/"
-            className="text-sm pt-1 text-gray-400 underline decoration-blue-700 underline-offset-2"
+            className="text-sm pt-1 text-gray-400 underline decoration-blue-700 underline-offset-2 w-fit"
           >
             LinkedIn
           </a>

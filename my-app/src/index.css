@@ -57,6 +57,11 @@ p {
 h1, h2, h3, ul, p {
   margin-bottom: 20px;
 }
+.text-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 code {
   font-family: 'Geist Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -74,5 +79,5 @@ video {
   border-radius: 12px; /* Rounded corners for a polished look */
 }
 body {
-  background-color: #F3F3F3;
+  background-color: #fff;
 }

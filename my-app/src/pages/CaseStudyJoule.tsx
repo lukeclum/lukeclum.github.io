@@ -1,8 +1,8 @@
 import React from "react";
 
-function CaseStudyABC() {
+function CaseStudyJoule() {
   return (
-    <div className="relative py-20 w-full pl-[300px]">
+    <div className="relative py-20 w-full">
       <div className="w-full md:w-[300px] px-10 fixed top-20 left-0">
         <p className="text-base">
           Luke Clum
@@ -441,4 +441,4 @@ function CaseStudyABC() {
   );
 }
 
-export default CaseStudyABC;
+export default CaseStudyJoule;

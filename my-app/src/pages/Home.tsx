@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "../components/Link";
 import Tooltip from "../components/Tooltip";
+import classNames from "classnames";
 
 function Home() {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
@@ -10,8 +11,8 @@ function Home() {
     { href: "/joule-sous-vide", text: "Stripe (Upon request)", bgImage: "url('/assets/cv-hero.png')" },
     { href: "/joule-sous-vide", text: "Joule: Sous vide cooking app", bgImage: "url('/assets/cv-hero.png')" },
     { href: "/joule-sous-vide", text: "Joule: Turbo cooking", bgImage: "url('/assets/cv-hero.png')" },
-    { href: "/joule-packaging", text: "Joule: Retail packaging", bgImage: "url('/assets/cv-hero.png')" },
-    { href: "/storyform", text: "Storyform: Building automated publishing tools", bgImage: "url('/assets/cv-hero.png')" },
+    { href: "/joule-packaging", text: "Joule: Retail packaging", bgImage: "url('/assets/joule-packaging-01.jpg')" },
+    { href: "/storyform", text: "Storyform: Building automated publishing tools", bgImage: "url('/assets/storyform-devices.jpg')" },
   ];
 
   return (
@@ -19,12 +20,11 @@ function Home() {
       className="App-header py-20 px-8 sm:px-20"
     >
     <div
-      className={classicNameResolver()}
+      className={classNames("absolute top-10 left-10 inset-10 z-0 rounded-[12px] transition-all duration-300", hoveredLink ? "opacity-10 blur-sm" : "opacity-0 blur-lg")}   
       style={{
         backgroundImage: hoveredLink ? hoveredLink : "none",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        transition: "background-image 0.3s ease-in-out",
       }}
     ></div>
       <div className="flex flex-col max-w-[400px]">

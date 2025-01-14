@@ -1,28 +1,30 @@
 import React from "react";
+import Link from "../components/Link";
 
 function CaseStudyStoryform() {
   return (
     <div className="relative py-20 w-full">
-      <div className="w-full md:w-[300px] px-10 fixed top-20 left-0">
-        <p className="text-base">
-          Luke Clum
-          <br />
+      <div className="inset-x-6 top-8 md:w-auto px-3 py-2 fixed md:top-12 md:left-12 md:right-auto z-20 rounded flex flex-row md:flex-col items-center md:items-start justify-between bg-gray-50 border border-gray-100">
+        <p className="text-base font-bold mb-0">
+          <Link href="/" text="Luke Clum" className="text-black before:bg-blue-400"/>
+          </p>
+        <code>
           Storyform, 2014
-        </p>
+          </code>
       </div>
-      <div>
+      <div className="w-full mx-auto">
         <div className="text-wrapper">
-          <h1 className="text-2xl">
+          <h1>
             Storyform: Building automated publishing tools
           </h1>
-          <h2 className="text-lg">Overview</h2>
-          <p className="text-base">
+          <h2>Overview</h2>
+          <h4>
             In spring of 2014, I co-founded Storyform to help small publishers
             create impactful and immersive reading experiences for their
             readers.
-          </p>
+          </h4>
         </div>
-        <div className="video-container relative w-full max-w-[1600px] mx-auto mb-10 px-10">
+        <div className="video-container relative w-full max-w-[1600px] mx-auto my-16 px-5 md:px-10">
           <video
             className="w-full rounded-[12px]"
             autoPlay
@@ -44,7 +46,7 @@ function CaseStudyStoryform() {
             captivating mix of multimedia and text, some calling it a
             “breakpoint in online journalism.”
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/storyform-snowfall.png"
@@ -60,7 +62,7 @@ function CaseStudyStoryform() {
             “Snowfall” from scratch. My co-founder and I saw an opportunity to
             build better tools for small publishers.
           </p>
-          <h2 className="text-lg">Problems in publishing</h2>
+          <h2>Problems in publishing</h2>
           <p className="text-base">
             Small publishers often found themselves stuck between a rock and
             hard place when it came to monetizing their content. On one hand,
@@ -74,14 +76,14 @@ function CaseStudyStoryform() {
             for them -- with advertising impressions continuing to decay across
             the board.
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/storyform-devices.jpg"
               alt="Storyform"
             />
           </div>
-          <h2 className="text-lg">The Creation of Storyform</h2>
+          <h2>The Creation of Storyform</h2>
           <p className="text-base">
             At the founding of Storyform, most publishers built their sites on
             WordPress and were limited by whatever bespoke templates their
@@ -102,7 +104,7 @@ function CaseStudyStoryform() {
               allowFullScreen
             ></iframe>
           </div>
-          <h2 className="text-lg">Automation</h2>
+          <h2>Automation</h2>
           <p className="text-base">
             At the heart of Storyform was our matching algorithm. One of our
             core design principles was to be a truly content first, responsive
@@ -112,7 +114,7 @@ function CaseStudyStoryform() {
             experience that leveraged the benefits of print and magazine layouts
             within a digital form.
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/storyform-system.png"
@@ -130,14 +132,14 @@ function CaseStudyStoryform() {
             stories in an interactive, paginated experience without any
             additional work.
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/storyform-templates.png"
               alt="Storyform templates"
             />
           </div>
-          <h2 className="text-lg">Better Advertising</h2>
+          <h2>Better Advertising</h2>
           <p className="text-base">
             The big promise of Storyform was that it would help drive much
             higher engagement for publishers, both with readership and with ads.
@@ -162,14 +164,14 @@ function CaseStudyStoryform() {
             <li>Storyform Percentage Read: 67%</li>
             <li>Storyform Ad Engagement: {">"}5 seconds</li>
           </ul>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/storyform-ads.png"
               alt="Storyform ads"
             />
           </div>
-          <h2 className="text-lg">So… What Happened?</h2>
+          <h2>So… What Happened?</h2>
           <p className="text-base">
             After a year, Storyform had over 4000 active publishers, had
             received international press, and had even placed in an
@@ -187,7 +189,7 @@ function CaseStudyStoryform() {
             weren’t willing to experiment with new ad formats. Without a host of
             ad tools and a library of ad real estate we were dead in the water.
           </p>
-          <h2 className="text-lg">Learnings</h2>
+          <h2>Learnings</h2>
           <p className="text-base">
             Know what problems you’re solving and know them intimately. It’s so
             easy in product development to get hung up on a specific product

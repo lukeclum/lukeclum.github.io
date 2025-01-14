@@ -14,9 +14,9 @@ const Link: FC<LinkProps> = ({
 }) => (
   <a
     href={href}
-    target="_blank"
+    target="_self"
     rel="noreferrer"
-    className={`text-sm text-gray-400 w-fit relative 
+    className={`text-base w-fit relative 
                 before:absolute before:inset-x-0 before:h-0.5 
                 before:bg-blue-700 before:bottom-0 before:scale-x-0 
                 before:origin-left hover:before:scale-x-100 

@@ -1,29 +1,31 @@
 import React from "react";
+import Link from "../components/Link";
 
 function CaseStudyJoule() {
   return (
-    <div className="relative py-20 w-full">
-      <div className="w-full md:w-[300px] px-10 fixed top-20 left-0">
-        <p className="text-base">
-          Luke Clum
-          <br />
-          ChefSteps, 2017
-        </p>
+    <div className="relative py-32 w-full">
+      <div className="inset-x-6 top-8 md:w-auto px-3 py-2 fixed md:top-12 md:left-12 md:right-auto z-20 rounded flex flex-row md:flex-col items-center md:items-start justify-between bg-gray-50 border border-gray-100">
+        <p className="text-base font-bold mb-0">
+          <Link href="/" text="Luke Clum" className="text-black before:bg-blue-400"/>
+          </p>
+        <code>
+          Chefsteps, 2017
+          </code>
       </div>
-      <div>
+      <div className="w-full mx-auto">
         <div className="text-wrapper">
-          <h1 className="text-2xl">Joule Sous Vide Cooking</h1>
-          <h2 className="text-lg">Overview</h2>
-          <p className="text-base">
+          <h1>Joule Sous Vide Cooking</h1>
+          <h2>Overview</h2>
+          <h4>
             ChefSteps, founded by the creators of Modernist Cuisine, aimed to
             empower home cooks with tools and content to make cooking precise,
             predictable, and accessible. I joined ChefSteps in 2015, and a year
             later we released Joule—the world’s first connected sous vide device
             controlled via a mobile app. We quickly sold over 250,000 units and
             became a clear leader in connected kitchen technology.
-          </p>
+          </h4>
         </div>
-        <div className="w-full max-w-[1600px] mx-auto mb-10 px-10">
+        <div className="w-full max-w-[1600px] mx-auto my-16 px-5 md:px-10">
           <img
             src="/assets/cv-hero.png"
             alt="Joule cook flow"
@@ -38,7 +40,7 @@ function CaseStudyJoule() {
             app, improving its usability and revitalizing the core cooking
             experience.
           </p>
-          <h2 className="text-lg">What is sous vide?</h2>
+          <h2>What is sous vide?</h2>
           <p className="text-base">
             Before we begin, it’s helpful to know what sous vide is. Sous vide
             is a cooking technique that uses water to cook foods to precise
@@ -47,7 +49,7 @@ function CaseStudyJoule() {
             specific temperature. This allows the food to be consistently cooked
             without risk of overcooking (unlike traditional methods).
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/joule-lifestyle-02.jpg"
@@ -61,14 +63,14 @@ function CaseStudyJoule() {
             was the primary resource for home sous vide cooking and released
             Joule to help make this tactic easier and more accessible.
           </p>
-          <h2 className="text-lg">Identifying the problems</h2>
+          <h2>Identifying the problems</h2>
           <p className="text-base">
             After helping launch the product the year prior, I needed to gather
             and consolidate feedback from our growing user base. Over a period
             of a few weeks, I conducted a mix of qualitative and quantitative
             research. This included:
           </p>
-          <ul className="list-disc pl-8">
+          <ul className="list-disc">
             <li>
               Remote contextual Interviews: I interviewed 15 users, representing
               power users, occasional users, and new customers. These 45-minute
@@ -86,7 +88,7 @@ function CaseStudyJoule() {
               satisfied and dissatisfied customers.
             </li>
           </ul>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/cook-research.jpg"
@@ -99,7 +101,7 @@ function CaseStudyJoule() {
             synthesizing the research, I identified a few key problems that
             needed to be addressed:
           </p>
-          <ul className="list-disc pl-8">
+          <ul className="list-disc">
             <li>
               Unstable Connections: Joule’s reliance on both Bluetooth and Wi-Fi
               meant inconsistent performance, which was particularly frustrating
@@ -124,7 +126,7 @@ function CaseStudyJoule() {
               errors during cooking—users had little recourse to recover.
             </li>
           </ul>
-          <h2 className="text-lg">Building the Technical Foundation</h2>
+          <h2>Building the Technical Foundation</h2>
           <p className="text-base">
             Addressing the connectivity and performance issues required more
             than a surface-level redesign—it demanded structural changes to the
@@ -134,7 +136,7 @@ function CaseStudyJoule() {
             phone-to-cloud pathway. Unfortunately, these systems were not
             synchronized, leading to data inconsistencies across devices.
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/data-distributed.png"
@@ -149,14 +151,14 @@ function CaseStudyJoule() {
             performance concerns, we began rebuilding portions of the app in
             React Native (a relatively new technology at that time).
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/data-joule.png"
               alt="Single data source"
             />
           </div>
-          <h2 className="text-lg">Design explorations</h2>
+          <h2>Design explorations</h2>
           <p className="text-base">
             With the technical foundation in place, I turned my attention to
             redesigning the user interface and experience. My approach was to
@@ -164,7 +166,7 @@ function CaseStudyJoule() {
             design could grow with future features. I outlined five key
             objectives for the redesign:
           </p>
-          <ul className="list-disc pl-8">
+          <ul className="list-disc">
             <li>Users should easily understand their current cooking state.</li>
             <li>
               Users should feel confident about when to add and remove their
@@ -177,7 +179,7 @@ function CaseStudyJoule() {
               products.
             </li>
           </ul>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px] border border-gray-200"
               src="/assets/cv-explorations.png"
@@ -198,7 +200,7 @@ function CaseStudyJoule() {
             theory, users would follow a linear process: preheat the water, add
             the food, and then start a timer.{" "}
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/autostart-timeline-1.png"
@@ -212,7 +214,7 @@ function CaseStudyJoule() {
             were confused about when their food was ready. This resulted in an
             average delay of 10-12 minutes.
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/autostart-timeline-2.png"
@@ -227,7 +229,7 @@ function CaseStudyJoule() {
             feature reduced average delays to just 27 seconds and alleviated one
             of our biggest pain points for users.{" "}
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/autostart-timeline-3.png"
@@ -244,7 +246,7 @@ function CaseStudyJoule() {
             notification that incentivized the user to walk into bluetooth range
             and open the app if we didn’t detect a water heated event.{" "}
           </p>
-          <h2 className="text-lg">Systems</h2>
+          <h2>Systems</h2>
           <p className="text-base">
             Building on these technical and workflow related improvements, I
             redesigned the entire cooking interface. At the core of these
@@ -252,7 +254,7 @@ function CaseStudyJoule() {
             patterns which proved to be particularly robust (7 years later this
             design is still being used).
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/cv-sections.png"
@@ -271,33 +273,26 @@ function CaseStudyJoule() {
           <p className="text-base">
             Additionally, I built a host of new components, hand drew new icons, and rebased our app onto a proper design system. 
           </p>
-          <div className="relative mb-8">
+          <p className="text-base">
+            Altogether, this system allowed us to release multiple new features.
+          </p>
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/ds-icons.png"
               alt="Icons"
             />
           </div>
-          <p className="text-base">
-            Altogether, this system allowed us to release multiple new features.
-          </p>
-          <h2 className="text-lg">A more comprehensive cooking dashboard</h2>
-        </div>
-        <div className="w-full max-w-[1600px] mx-auto mb-10 px-10">
-          <img
-            src="/assets/cook-closer.jpg"
-            alt="Joule cook flow"
-            className="rounded-[12px]"
-          />
         </div>
         <div className="text-wrapper">
-          <h3 className="text-md">Simple, Glanceable Status</h3>
+          <h2>A more comprehensive cooking dashboard</h2>
+          <h3>Simple, Glanceable Status</h3>
           <p className="text-base">
             To help cut through the chaos of the kitchen, we designed a simple,
             glanceable view that would quickly communicate the status of the
             cook and showcase only the most relevant information.
           </p>
-          <div className="video-container relative mb-8">
+          <div className="video-container relative my-12">
             <video
               className="w-full rounded-[12px]"
               autoPlay
@@ -310,27 +305,27 @@ function CaseStudyJoule() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <h3 className="text-md">Detailed Cooking Stats</h3>
+          <h3>Detailed Cooking Stats</h3>
           <p className="text-base">
             To help with missed notifications and meal planning we included a
             comprehensive timeline of cooking events. This was particularly
             helpful for users completing longer cooks (more than 24 hours).
           </p>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/cv-timeline.png"
               alt="cook timeline"
             />
           </div>
-          <h3 className="text-md">Autostart-gray Timers</h3>
+          <h3>Autostart-gray Timers</h3>
           <p className="text-base">
             In order to reduce unnecessary touch points, we decided to encourage
             users to drop their food early and let Joule automatically start
             their timer once their water was heated. This addressed one of our
             most common user complaints.
           </p>
-          <div className="video-container relative mb-8">
+          <div className="video-container relative my-12">
             <video
               className="w-full rounded-[12px]"
               autoPlay
@@ -343,7 +338,7 @@ function CaseStudyJoule() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <h3 className="text-md">Hold Times</h3>
+          <h3>Hold Times</h3>
           <p className="text-base">
             To highlight flexibility of sous vide and reassure users that their
             food could remain in the water without overcooking, we introduced
@@ -351,7 +346,7 @@ function CaseStudyJoule() {
             exactly how long their food could remain in the water before there
             was any significant difference.
           </p>
-          <div className="video-container relative mb-8">
+          <div className="video-container relative my-12">
             <video
               className="w-full rounded-[12px]"
               autoPlay
@@ -364,13 +359,13 @@ function CaseStudyJoule() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <h3 className="text-md">Error Handling</h3>
+          <h3>Error Handling</h3>
           <p className="text-base">
             To make errors more clear and recoveries more obvious, we released a
             simplified pattern that helped users troubleshoot their problem and
             easily recover when possible.
           </p>
-          <div className="video-container relative mb-8">
+          <div className="video-container relative my-12">
             <video
               className="w-full rounded-[12px]"
               autoPlay
@@ -383,13 +378,13 @@ function CaseStudyJoule() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <h3 className="text-md">Simple and Familiar Recipes</h3>
+          <h3>Simple and Familiar Recipes</h3>
           <p className="text-base">
             We replaced a confusing multi-screen recipe format (with a heavy
             emphasis on video content) with a clean, vertical list, making steps
             easier to follow and content creation more efficient.
           </p>
-          <div className="video-container relative mb-8">
+          <div className="video-container relative my-12">
             <video
               className="w-full rounded-[12px]"
               autoPlay
@@ -402,20 +397,20 @@ function CaseStudyJoule() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="relative mb-8">
+          <div className="relative my-12">
             <img
               className="w-full rounded-[12px]"
               src="/assets/cv-recipe-flow.jpg"
               alt="Recipe flow"
             />
           </div>
-          <h2 className="text-lg">Reception and Results</h2>
+          <h2>Reception and Results</h2>
           <p className="text-base">
             The redesigned Joule app was met with overwhelmingly positive
             feedback. Users praised its simplicity, clarity, and responsiveness.
             Key outcomes included:
           </p>
-          <ul className="list-disc pl-8">
+          <ul className="list-disc">
             <li>A smoother onboarding experience for new users.</li>
             <li>
               Reduced frustration from connectivity and performance issues.
@@ -435,6 +430,13 @@ function CaseStudyJoule() {
             award and was recognized by New York Time’s Wire Cutter as the best
             sous vide device.
           </p>
+        </div>
+        <div className="w-full max-w-[1600px] mx-auto my-16 px-5 md:px-10">
+          <img
+            src="/assets/cook-closer.jpg"
+            alt="Joule cook flow"
+            className="rounded-[12px]"
+          />
         </div>
       </div>
     </div>
